@@ -108,10 +108,9 @@
         }
 
         // カウントダウンをリセットする関数
-        function resetCountdown() {
-            clearInterval(countdownInterval);
+        function resetCountdown() {            
+            updateTimer('Click');
             isPaused = false;
-            
             setMode("restart");
         }
 
